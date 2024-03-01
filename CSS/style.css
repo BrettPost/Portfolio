@@ -1,0 +1,84 @@
+body {
+    background-color: #1a324b;
+    margin: 0px;
+}
+
+label {
+    color: #AAF0D1;
+}
+
+header {
+    background-color: #1a324b;
+    padding: 0.5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav > ul {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+nav li {
+    font-size: 24px;
+    margin: 0 2rem 0 2rem;
+    list-style-type: none;
+    font-family: 'Kdam Thmor';
+}
+
+nav a:link {
+    color:#AAF0D1;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color:#AAF0D1;
+}
+
+/* nav a:hover {
+    color:#AAF0D1;
+}
+
+nav a:active {
+    color:#AAF0D1;
+} */
+
+
+
+main {
+    margin: 30vh 0 30vh 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+main label {
+    color: #F08080;
+    font-size: 64px;
+}
+
+
+
+footer {
+    height: 10rem;
+}
+
+footer > img {
+    width: 8rem;
+}
+
+
+
+/* Classes */
+
+.title {
+    font-size: 36px;
+    color: #AAF0D1;
+    margin: 0 0 0 1rem;
+    font-family: 'Kdam Thmor';
+}
