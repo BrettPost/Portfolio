@@ -1,6 +1,12 @@
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #1a324b;
-    margin: 0px;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
 }
 
 label {
@@ -29,14 +35,13 @@ nav li {
     font-family: 'Kdam Thmor';
 }
 
-nav a:link {
+nav a:link, nav a:visited {
     color:#AAF0D1;
-    text-decoration: none;
 }
 
-nav a:visited {
+/* nav a:visited {
     color:#AAF0D1;
-}
+} */
 
 /* nav a:hover {
     color:#AAF0D1;
@@ -49,18 +54,16 @@ nav a:active {
 
 
 main {
-    margin: 30vh 0 30vh 0;
+    display: block;
+    margin: auto auto auto auto;
 }
 
-section {
+/* section {
     display: flex;
     justify-content: center;
-}
+} */
 
-main label {
-    color: #F08080;
-    font-size: 64px;
-}
+
 
 
 
@@ -81,4 +84,9 @@ footer > img {
     color: #AAF0D1;
     margin: 0 0 0 1rem;
     font-family: 'Kdam Thmor';
+}
+
+.countdown {
+    color: #F08080;
+    font-size: 64px;
 }

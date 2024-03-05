@@ -1,0 +1,44 @@
+section {
+    display: grid;
+    gap: 100px 150px;
+    margin-top: 10rem;
+}
+
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #AAF0D1;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card > img {
+    max-width: 36rem;
+    width: 100%;
+}
+
+.card > label {
+    font-size: 64px;
+    color:black;
+    cursor: pointer;
+}
+
+
+.project1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.project2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.project3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
