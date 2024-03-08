@@ -14,8 +14,13 @@ label {
 }
 
 header {
+    position: fixed;
     background-color: #1a324b;
     padding: 0.5rem;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 nav {
