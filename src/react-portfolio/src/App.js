@@ -3,9 +3,9 @@ import Navbar from './Components/Nav/Navbar';
 import Footer from './Components/Footer/Footer';
 import './App.css';
 import {Routes, Link, Route, Navigate} from 'react-router-dom';
-import Home from './Components/Pages/Home';
-import Projects from './Components/Pages/Projects';
-import About from './Components/Pages/About';
+import HomePage from './Components/Pages/HomePage';
+import ProjectPage from './Components/Pages/ProjectsPage';
+import AboutPage from './Components/Pages/AboutPage';
 
 function App() {
   return (
@@ -15,10 +15,10 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path='/' element={<Home name="Brett" />} />
+          <Route path='/' element={<HomePage />} />
           <Route path='/Home' element={<Navigate to="/" />} />
-          <Route path='/Projects' element={<Projects />} />
-          <Route path='/About' element={<About />} />
+          <Route path='/Projects' element={<ProjectPage />} />
+          <Route path='/About' element={<AboutPage />} />
         </Routes>
       </main>
       <footer>

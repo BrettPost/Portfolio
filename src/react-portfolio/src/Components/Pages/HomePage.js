@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = (props) => {
+const HomePage = (props) => {
     return (
         <div>
             <section>
@@ -25,4 +25,4 @@ const Home = (props) => {
     )
 }
 
-export default Home;
+export default HomePage;

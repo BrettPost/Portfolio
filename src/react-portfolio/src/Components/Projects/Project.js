@@ -1,0 +1,19 @@
+import React from "react";
+import {Link} from 'react-router-dom';
+import './../../CSS/Projects.css';
+
+const Project = (props) => {
+    return (
+        <Link to='/NewProject'>
+            <article className="project1">
+                <div className="card">
+                    <img src={props.image} />
+                    <label>{props.name}</label>
+                </div>
+                {/* <a href="./NewProject.html" onclick="selectFutureProject(0)"></a> */}
+            </article>
+        </Link>
+    )
+}
+
+export default Project;
