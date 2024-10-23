@@ -176,6 +176,10 @@ footer a {
   display: none;
 }
 
+.selectedPageLink {
+  border-bottom: 1px solid #AAF0D1
+}
+
 
 /* Animations */
 
