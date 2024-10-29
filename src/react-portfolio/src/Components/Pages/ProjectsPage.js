@@ -8,9 +8,9 @@ const ProjectPage = () => {
     return (
         <section>
             {/* CONVERT THIS TO A METHOD THAT Loops through project list */}
-            <Project name='Memory' image={MemoryImage} />
-            <Project name='Koi Ponds' image={KoiFishImage} />
-            <Project name='Lucky Shrub Garden' image={LuckyShrubImage} />
+            <Project name='Memory' gridNumber='1' image={MemoryImage} />
+            <Project name='Koi Ponds' gridNumber='2' image={KoiFishImage} />
+            <Project name='Lucky Shrub Garden' gridNumber='3' image={LuckyShrubImage} />
         </section>
     )
 }
