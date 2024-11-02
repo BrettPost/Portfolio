@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import {Link, Outlet} from 'react-router-dom';
 import './../../CSS/Projects.css';
 
 const Project = (props) => {
@@ -13,6 +13,8 @@ const Project = (props) => {
                     </div>
                     {/* <a href="./NewProject.html" onclick="selectFutureProject(0)"></a> */}
                 </Link>
+
+                <Outlet />
             </article>
     )
 }
