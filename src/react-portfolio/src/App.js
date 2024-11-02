@@ -19,6 +19,7 @@ function App() {
           <Route path='/Home' element={<Navigate to="/" />} />
           <Route path='/Projects' element={<ProjectPage />} />
           <Route path='/About' element={<AboutPage />} />
+          <Route path="*" element={null} />
         </Routes>
       </main>
       <footer>

@@ -6,7 +6,7 @@ const Project = (props) => {
     return (
         
             <article className={"project" + props.gridNumber + " "}>
-                <Link to='/NewProject' className="gridItem">
+                <Link to='NewProject' className="gridItem">
                     <div className="card">
                         <img src={props.image} />
                         <label>{props.name}</label>
