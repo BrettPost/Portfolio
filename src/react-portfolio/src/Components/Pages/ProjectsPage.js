@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import Project from './../Projects/Project';
 import MemoryImage from './../../Assets/Memory.webp';
 import KoiFishImage from './../../Assets/KoiFish.webp';

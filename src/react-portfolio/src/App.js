@@ -7,6 +7,7 @@ import HomePage from './Components/Pages/HomePage';
 import ProjectPage from './Components/Pages/ProjectsPage';
 import AboutPage from './Components/Pages/AboutPage';
 import NewProject from './Components/Pages/NewProjectPage';
+import { Children } from 'react';
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/Home' element={<Navigate to="/" />} />
           <Route path='/Projects' element={<ProjectPage />}>
-            <Route path='NewProject' element={<NewProject />} />
+            {/* <Route path='NewProject' element={<NewProject />} /> */}
           </Route>
           <Route path='/About' element={<AboutPage />} />
+          <Route path='NewProject' element={<NewProject name={Children}/>} />
           <Route path="*" element={null} />
         </Routes>
       </main>

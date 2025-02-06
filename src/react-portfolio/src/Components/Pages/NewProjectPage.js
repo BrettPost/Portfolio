@@ -9,7 +9,7 @@ const NewProject = (props) => {
             <br />
             <h2 class="">Check out</h2>
             <h2><a href="https://github.com/brettpost" id="ProjectHeader" class="repoLink">GitHub</a></h2>
-            <h2> on GitHub for updates and progress!</h2>
+            <h2> for updates and progress!</h2>
             <p></p>
         </div> 
     )
