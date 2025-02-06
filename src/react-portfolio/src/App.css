@@ -1,0 +1,194 @@
+.App {
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a324b;
+}
+
+a {
+  text-decoration: none;  
+  color: #AAF0D1; 
+}
+
+label {
+  color: #AAF0D1;
+}
+
+header {
+  position: fixed;
+  background-color: #1a324b;
+  padding: 0.5rem;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+html:not([data-scroll='0']) header {
+  box-shadow: 5px 2px 10px #AAF0D1;
+  animation-name: navShadow;
+  animation-duration: 1ms;
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+
+nav li {
+  /* font-size: 24px; */
+  margin: 0 2rem 0 2rem;
+  list-style-type: none;
+  font-family: 'Kdam Thmor';
+  font-size: min(1.8vw, 23px);
+  z-index: 2;
+}
+
+/*TODO - Mobile nav*/
+
+nav a:link, nav a:visited {
+  color:#AAF0D1;
+}
+
+/* nav a:visited {
+  color:#AAF0D1;
+} */
+
+/* nav a:hover {
+  color:#AAF0D1;
+}
+
+nav a:active {
+  color:#AAF0D1;
+} */
+
+
+
+/* @media screen and (max-width: 600px) {
+  nav li {
+    background-color: #F08080;
+  }
+} */
+
+
+
+main {
+  display: block;
+  margin: 10% auto auto auto;
+  color: white;
+  text-align: center;
+}
+
+
+/* TODO Fix Mobile content going into nav bar */
+
+
+footer {
+  height: 10rem;
+  margin: 17% 5% 0 5%;
+  font-size: min(2.5vw, 18px);
+  display: flex;
+  padding-top: 3%;
+  border-top: solid 2px #AAF0D1;
+}
+
+footer img {
+  width: 7rem;
+  border-radius: 100px;
+  justify-content: center;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+}
+
+footer label {
+  margin: 5% 0 5% 0;
+}
+
+footer a {
+  text-decoration-line: underline;
+}
+
+
+/* Classes */
+
+.title {
+  font-size: 36px;
+  color: #AAF0D1;
+  margin: 0 0 0 1rem;
+  font-family: 'Kdam Thmor';
+}
+
+.countdown {
+  color: #F08080;
+  font-size: 4vw;
+}
+
+.repoLink {
+  color: #F08080;
+  font-size: 4vw;
+}
+
+.repoLink:hover {
+  text-shadow: 2px 2px 2px white;
+}
+
+.headliner {
+  color: #F08080;
+  font-family: 'Kdam Thmor';
+  font-size: min(4vw, 56px);
+  line-height: min(3vw, 35px);
+  margin: 6rem 0 10rem 0;
+}
+
+.aboutMe {
+  margin: 0 25% 10rem 25%;
+  font-size: min(2vw, 22px);
+  line-height: min(3vw, 35px);
+}
+
+.mobileNavIcon {
+  display: none;
+  z-index: 1;
+}
+
+.mobileLinkMenu {
+  display: none;
+}
+
+.selectedPageLink {
+  border-bottom: 1px solid #AAF0D1
+}
+
+
+/* Animations */
+
+@keyframes navShadow {
+  0%   {box-shadow: 1px 1px 1px #1a324b;}
+  100% {box-shadow: 5px 2px 10px #AAF0D1;}
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+  nav li {
+      display: none;
+      z-index: 1;
+  }
+}

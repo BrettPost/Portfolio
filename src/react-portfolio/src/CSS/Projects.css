@@ -1,0 +1,61 @@
+section {
+    display: grid;
+    gap: 16vh 4vw;
+    margin-top: 10rem;
+}
+
+.gridItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 70%;
+    height: 20vmax;
+    
+}
+
+.card:hover {
+    box-shadow: 5px 8px 6px #AAF0D1;
+    scale: 105%;
+    z-index: auto;
+}
+
+.card > img {
+    height: inherit;
+}
+
+.card > label {
+    font-size: 3vmax;
+    color:black;
+    background-color: #AAF0D1;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: -12%;
+}
+
+
+.project1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.project2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.project3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}

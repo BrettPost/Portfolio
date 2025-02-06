@@ -188,11 +188,4 @@ footer a {
         display: none;
         z-index: 1;
     }
-
-    .mobileMenu {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        right: 1rem;
-    }
 }
