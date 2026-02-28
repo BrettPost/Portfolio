@@ -17,7 +17,7 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'TanStack Start Starter',
+        title: 'Brett Post — Portfolio',
       },
     ],
     links: [
@@ -37,8 +37,13 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <Header />
-        {children}
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
         <TanStackDevtools
           config={{
             position: 'bottom-right',
