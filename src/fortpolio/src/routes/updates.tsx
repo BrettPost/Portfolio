@@ -1,49 +1,76 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { useEffect, useRef } from 'react'
+//import { useEffect, useRef } from 'react'
 
 /**
  * Set your X (Twitter) username here to show your timeline on the Updates page.
  * The timeline is loaded via Twitter's official embed script.
  */
-const TWITTER_USERNAME = 'BrettPost'
+const TWITTER_USERNAME = 'Brett_wPost'
+// const height = 600;
+// const theme = "light";
 
 export const Route = createFileRoute('/updates')({
   component: UpdatesPage,
   head: () => ({ meta: [{ title: 'Updates — Brett Post' }] }),
 })
 
+// declare global {
+//   interface Window {
+//     twttr?: any;
+//   }
+// }
+
 function UpdatesPage() {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const scriptLoadedRef = useRef(false)
+  //const containerRef = useRef<HTMLDivElement>(null)
+  //const scriptLoadedRef = useRef(false)
 
-  useEffect(() => {
-    if (!containerRef.current || scriptLoadedRef.current) return
+  
 
-    const loadScript = () => {
-      const existing = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]')
-      if (existing) {
-        scriptLoadedRef.current = true
-        if (typeof (window as unknown as { twttr?: { widgets?: { load?: () => void } } }).twttr?.widgets?.load === 'function') {
-          ;(window as unknown as { twttr: { widgets: { load: () => void } } }).twttr.widgets.load()
-        }
-        return
-      }
+  // useEffect(() => {
+  //   let cancelled = false;
 
-      const script = document.createElement('script')
-      script.src = 'https://platform.twitter.com/widgets.js'
-      script.charset = 'utf-8'
-      script.async = true
-      script.onload = () => {
-        scriptLoadedRef.current = true
-        if (typeof (window as unknown as { twttr?: { widgets?: { load?: () => void } } }).twttr?.widgets?.load === 'function') {
-          ;(window as unknown as { twttr: { widgets: { load: () => void } } }).twttr.widgets.load()
-        }
-      }
-      document.body.appendChild(script)
-    }
+  //   const render = async () => {
+  //     if (!containerRef.current) return;
 
-    //loadScript()
-  }, [])
+  //     // Clear previous render (important if username changes)
+  //     containerRef.current.innerHTML = "";
+
+  //     // Ensure script is loaded
+  //     const existing = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]');
+  //     if (!existing) {
+  //       await new Promise<void>((resolve, reject) => {
+  //         const s = document.createElement("script");
+  //         s.src = "https://platform.twitter.com/widgets.js";
+  //         s.async = true;
+  //         s.onload = () => resolve();
+  //         s.onerror = () => reject(new Error("Failed to load Twitter widgets.js"));
+  //         document.body.appendChild(s);
+  //       });
+  //     }
+
+  //     if (cancelled) return;
+
+  //     // Create embed
+  //     const a = document.createElement("a");
+  //     a.setAttribute("class", "twitter-timeline");
+  //     a.setAttribute("href", `https://twitter.com/${TWITTER_USERNAME}`);
+  //     a.setAttribute("data-height", String(height));
+  //     a.setAttribute("data-theme", theme);
+
+  //     containerRef.current.appendChild(a);
+
+  //     // Ask widgets.js to parse + render
+  //     if (window.twttr?.widgets?.load) {
+  //       window.twttr.widgets.load(containerRef.current);
+  //     }
+  //   };
+
+  //   render();
+
+  //   return () => {
+  //     cancelled = true;
+  //   };
+  // }, [TWITTER_USERNAME, height, theme]);
 
   return (
     <div className="min-h-[calc(100vh-4rem)] py-12 px-6">
@@ -58,7 +85,7 @@ function UpdatesPage() {
           <p className="text-lg" style={{ color: 'var(--color-text-muted)' }}>
             Latest posts from X (Twitter). Follow{' '}
             <a
-              href={`https://twitter.com/${TWITTER_USERNAME}`}
+              href={`https://x.com/${TWITTER_USERNAME}`}
               target="_blank"
               rel="noopener noreferrer"
               className="underline focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-surface)] rounded"
@@ -69,8 +96,15 @@ function UpdatesPage() {
             for more.
           </p>
         </header>
+        <hr/>
+        <main>
+          <br/>
+          <p className="text-lg" style={{ color: 'var(--color-text-muted)' }}>
+            I will eventually add my full feed of posts here.
+          </p>
+        </main>
 
-        <div
+        {/* <div
           ref={containerRef}
           className="flex justify-center"
           aria-label={`X (Twitter) timeline for @${TWITTER_USERNAME}`}
@@ -80,15 +114,12 @@ function UpdatesPage() {
             data-dnt="true"
             data-theme="dark"
             data-chrome="noheader nofooter noborders"
-            href={`https://twitter.com/${TWITTER_USERNAME}?ref_src=twsrc%5Etfw`}
+            href={`https://x.com/${TWITTER_USERNAME}`}
           >
             Tweets by @{TWITTER_USERNAME}
           </a>
-        </div>
+        </div> */}
 
-        <p className="mt-6 text-sm text-center" style={{ color: 'var(--color-text-muted)' }}>
-          Timeline content is provided by X. If it doesn’t load, check that the username is correct or that X embed is allowed in your browser.
-        </p>
       </div>
     </div>
   )

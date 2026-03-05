@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { Code2, FolderGit2, User, Newspaper } from 'lucide-react'
+import { FolderGit2, User } from 'lucide-react'
 
 export const Route = createFileRoute('/')({
   component: HomePage,
@@ -26,7 +26,7 @@ function HomePage() {
             className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4"
             style={{ color: 'var(--color-text)' }}
           >
-            <span style={{ color: 'var(--color-accent)' }}>Brett Post</span> the Software Engineer
+            <span style={{ color: 'var(--color-accent)' }}>"Brett Post"</span>: "Software Engineer";
           </h1>
           <p
             className="text-xl md:text-2xl mb-6 font-light"

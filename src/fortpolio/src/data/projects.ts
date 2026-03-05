@@ -24,18 +24,17 @@ export const projects: Project[] = [
     id: 'student-run',
     title: 'StudentRun',
     description:
-      'A command-line utility for automating repetitive tasks. Fast, scriptable, and well-documented for team use.',
+      'A running application for schools to use for students during recess. Created with a .NET backend and a React frontend.',
     siteUrl: 'https://github.com',
-    repoUrl: 'https://github.com/BrettPost/student-run',
-    tags: ['C#', '.NET', 'React'],
+    tags: ['C#', '.NET', 'React', 'PostgreSQL'],
   },
   {
     id: 'lucky-shrub-garden',
     title: 'Lucky Shrub Garden',
     description:
-      'A sample full-stack application demonstrating authentication, CRUD operations, and responsive UI. Built to learn modern web patterns.',
-    siteUrl: 'https://example.com',
+      'A mock restaurant website. It was built for a capstone project completing the final step of the Meta Frontend Developer Professional Certificate.',
+    siteUrl: 'https://garden.BrettPost.com',
     repoUrl: 'https://github.com/BrettPost/MetaFrontEndCourse/tree/main/src/LuckyShrubGarden',
-    tags: ['React', 'CSS'],
+    tags: ['React', 'CSS', 'HTML'],
   },
 ]

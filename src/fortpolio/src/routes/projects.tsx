@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { ExternalLink, Github } from 'lucide-react'
-import { projects } from '#/data/projects'
+import { projects } from '../data/projects'
 import type { Project } from '@/data/projects'
 
 export const Route = createFileRoute('/projects')({
