@@ -3,6 +3,7 @@ import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 import appCss from '../styles.css?url'
 
@@ -36,25 +37,15 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="flex min-h-screen flex-col">
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
         <Header />
-        <main id="main-content" tabIndex={-1}>
+        <main id="main-content" className="flex-1" tabIndex={-1}>
           {children}
         </main>
-        <TanStackDevtools
-          config={{
-            position: 'bottom-right',
-          }}
-          plugins={[
-            {
-              name: 'Tanstack Router',
-              render: <TanStackRouterDevtoolsPanel />,
-            },
-          ]}
-        />
+        <Footer />
         <Scripts />
       </body>
     </html>

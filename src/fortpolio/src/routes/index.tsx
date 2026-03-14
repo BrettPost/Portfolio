@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { FolderGit2, User } from 'lucide-react'
+import mountainImage from '../assets/ViewAndMountains.JPG'
 
 export const Route = createFileRoute('/')({
   component: HomePage,
@@ -63,6 +64,17 @@ function HomePage() {
           </div>
         </div>
       </section>
+      <figure className="m-0 flex justify-center px-6 py-10 sm:py-12">
+        <img
+          src={mountainImage}
+          alt="Brett backpacking on a grassy cliff with mountains in the background (Yosemite)"
+          className="w-full max-w-[320px] sm:max-w-[380px] md:max-w-[420px] rounded-2xl border-2 object-cover shadow-xl"
+          style={{ borderColor: 'var(--color-border)' }}
+          width={420}
+          height={420}
+          loading="lazy"
+        />
+      </figure>
     </div>
   )
 }
