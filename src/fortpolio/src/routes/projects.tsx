@@ -58,7 +58,8 @@ function ProjectsPage() {
                   </ul>
                 )}
                 <div className="flex flex-wrap gap-3">
-                  <a
+                  {project.siteUrl && (
+                    <a
                     href={project.siteUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -68,6 +69,7 @@ function ProjectsPage() {
                     <ExternalLink size={16} aria-hidden />
                     Visit site
                   </a>
+                  )}
                   {project.repoUrl && (
                     <a
                       href={project.repoUrl}
@@ -79,6 +81,9 @@ function ProjectsPage() {
                       <Github size={16} aria-hidden />
                       Repository
                     </a>
+                  )}
+                  {project.note && (
+                    <p className='text-sm' style={{ color: 'var(--color-text-muted)' }}>{project.note}</p>
                   )}
                 </div>
               </article>

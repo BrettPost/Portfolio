@@ -5,9 +5,10 @@ export interface Project {
   id: string
   title: string
   description: string
-  siteUrl: string
+  siteUrl?: string
   repoUrl?: string
   tags?: string[]
+  note?: string
 }
 
 export const projects: Project[] = [
@@ -25,15 +26,23 @@ export const projects: Project[] = [
     title: 'StudentRun',
     description:
       'A running application for schools to use for students during recess. Created with a .NET backend and a React frontend.',
-    siteUrl: 'https://github.com',
+    tags: ['TypeScript', 'Cursor'],
+    note: "In Progress - Repo is private",
+  },
+  {
+    id: 'envoy-hackathon',
+    title: 'Envoy Hackathon',
+    description:
+      'A hackathon project for Envoy. This app was a trivia application used for company TVs and other devices.',
     tags: ['C#', '.NET', 'React', 'PostgreSQL'],
+    siteUrl: 'https://hack-night-2025.vercel.app/',
+    repoUrl: 'https://github.com/BrettPost/hack-night-2025',
   },
   {
     id: 'lucky-shrub-garden',
     title: 'Lucky Shrub Garden',
     description:
       'A mock restaurant website. It was built for a capstone project completing the final step of the Meta Frontend Developer Professional Certificate.',
-    siteUrl: 'https://garden.BrettPost.com',
     repoUrl: 'https://github.com/BrettPost/MetaFrontEndCourse/tree/main/src/LuckyShrubGarden',
     tags: ['React', 'CSS', 'HTML'],
   },
