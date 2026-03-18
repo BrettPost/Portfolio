@@ -17,9 +17,9 @@ export const projects: Project[] = [
     title: 'Portfolio',
     description:
       'This portfolio site — built with TanStack Start, React, and Tailwind. A static site showcasing projects and updates with an accessible, modern design.',
+    tags: ['React', 'TanStack Start', 'TypeScript', 'Tailwind'],
     siteUrl: '/',
     repoUrl: 'https://github.com/BrettPost/Portfolio',
-    tags: ['React', 'TanStack Start', 'TypeScript', 'Tailwind'],
   },
   {
     id: 'student-run',
@@ -35,7 +35,7 @@ export const projects: Project[] = [
     description:
       'A hackathon project for Envoy. This app was a trivia application used for company TVs and other devices.',
     tags: ['C#', '.NET', 'React', 'PostgreSQL'],
-    siteUrl: 'https://hack-night-2025.vercel.app/',
+    siteUrl: 'https://trivia.brettpost.com',
     repoUrl: 'https://github.com/BrettPost/hack-night-2025',
   },
   {
@@ -43,7 +43,8 @@ export const projects: Project[] = [
     title: 'Lucky Shrub Garden',
     description:
       'A mock restaurant website. It was built for a capstone project completing the final step of the Meta Frontend Developer Professional Certificate.',
-    repoUrl: 'https://github.com/BrettPost/MetaFrontEndCourse/tree/main/src/LuckyShrubGarden',
     tags: ['React', 'CSS', 'HTML'],
+    siteUrl: 'https://little-lemon.brettpost.com/',
+    repoUrl: 'https://github.com/BrettPost/MetaFrontEndCourse/tree/main/src/LuckyShrubGarden',
   },
 ]

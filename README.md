@@ -1,6 +1,12 @@
-# Portfolio
-Portfolio for Brett Post
+# Personal Portfolio
 
-This is a test commit for the new deployment pipeline!
-Test #2
-Test #3
+My personal website and portfolio — Take a gander at what I spend my time doing
+
+---
+
+## Tech Stack
+
+- **Framework** — [TanStack Start](https://tanstack.com/start)
+- **Routing** — [TanStack Router](https://tanstack.com/router)
+- **Styling** — Tailwind CSS
+- **Deployment** — Vercel

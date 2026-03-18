@@ -29,7 +29,7 @@ function AboutPage() {
               </h2>
               <p style={{ color: 'var(--color-text-muted)' }}>
                 I work as a full stack developer. From C# and SQL on the backend to React and Tailwind on the frontend. I also
-                put time into configuring enviornments on-prem or in the cloud on Azure. I have worked on projects involving
+                put time into configuring environments on-prem or in the cloud on Azure. I have worked on projects involving
                 API development, Framework upgrades, Authentication provider replacements, performance improvements to rendering images,
                 and many more across tech stacks.  
               </p>
